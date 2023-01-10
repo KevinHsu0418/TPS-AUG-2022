@@ -2,13 +2,11 @@
 
 This repository is the machine learning final project on real-world competition(https://www.kaggle.com/competitions/tabular-playground-series-aug-2022/overview). 
 
-## Requirements
+## Specification of dependencies
 
-To install requirements:
-
-```setup
-pip install -r requirements.txt
-```
+1. Using colab to run 109550147_Final_train.ipynb to generate model, and put model on right place.
+2. Run 109550147_Final_inference.ipynb on colab to test your own model. 
+3. If you want to reproduce my result, just download the pre-trained model below and put it on right place. So that you can get the result with my accuracy. 
 
 ## Training code
 
@@ -99,6 +97,9 @@ for i in range(250): #run 250 epochs
         optimizer.step()
 ```
 ## Evaluation Code
+
+To evaluation the model , run this code on colab:
+
 #### Testing Dataset
 ```testdata
 class TPS_test_dataset(Dataset):
